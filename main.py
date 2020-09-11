@@ -25,7 +25,8 @@ elif (now>=21) & (now<=22):
     templateid = "clockSign3"
     customerAppTypeRuleId = 148
 else:
-    print("不在指定时间内")
+    print("现在是%d点，打卡时间将自动打卡" %(now))
+    os._exit()
 
 # 随机温度(36.2~36.8)
 a = random.uniform(36.2, 36.4)
