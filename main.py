@@ -26,7 +26,7 @@ elif (now>=21) & (now<=22):
     customerAppTypeRuleId = 148
 else:
     print("现在是%d点，打卡时间将自动打卡" %(now))
-    os._exit()
+    exit(0)
 
 # 随机温度(36.2~36.8)
 a = random.uniform(36.2, 36.4)
