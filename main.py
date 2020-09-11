@@ -21,9 +21,11 @@ if (now >= 6) & (now <= 8):
 elif (now >= 12) & (now <= 14):
     templateid = "clockSign2"
     customerAppTypeRuleId = 147
-else:
+elif (now>=21) & (now<=22):
     templateid = "clockSign3"
     customerAppTypeRuleId = 148
+else:
+    print("不在指定时间内")
 
 # 随机温度(36.2~36.8)
 a = random.uniform(36.2, 36.4)
@@ -69,9 +71,9 @@ cstTime = utcTime.strftime("%H时%M分%S秒")
 print(response.text)
 # 结果判定
 if response.json()["msg"] == '成功':
-    msg = cstTime + "打卡成功 "
+    msg = cstTime + "打卡成功"
 else:
-    msg = cstTime + "打卡异常 "
+    msg = cstTime + "打卡异常"
 print(msg)
 # 微信通知
 
