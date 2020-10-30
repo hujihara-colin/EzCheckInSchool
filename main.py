@@ -61,9 +61,11 @@ jsons = {
                 "value": "无症状"
             }
         ],
-        "customerAppTypeRuleId": customerAppTypeRuleId,
-        "clockState": 0
+        "customerAppTypeRuleId": 147,
+        "clockState": 0,
+        "token": "5ce4ec3f-b2ac-42b4-bec4-f0cd06539821"
     },
+    "token": "5ce4ec3f-b2ac-42b4-bec4-f0cd06539821"
 }
 # 提交打卡
 response = requests.post(sign_url, json=jsons)
